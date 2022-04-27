@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "d44d0c80-a94f-4c8f-8a33-14e0ec062b25",
+		"name": "Servicio Restfull PHP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Arquitectura/crud_usuarios/post.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Arquitectura",
+						"crud_usuarios",
+						"post.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Arquitectura/crud_usuarios/post.php?id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Arquitectura",
+						"crud_usuarios",
+						"post.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"email\": \"pruebaecho@test.com\",\r\n    \"password\": \"echo123\",\r\n    \"nombre\": \"Don Ekko\",\r\n    \"telefono\": \"0001234\",\r\n    \"rol_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Arquitectura/crud_usuarios/post.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Arquitectura",
+						"crud_usuarios",
+						"post.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"email\": \"cpruebaPUT@test.com\",\r\n    \"password\": \"unacontrasena123PUT\",\r\n    \"nombre\": \"JorgeNit PUT\",\r\n    \"telefono\": \"00023\",\r\n    \"rol_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Arquitectura/crud_usuarios/post.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Arquitectura",
+						"crud_usuarios",
+						"post.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Arquitectura/crud_usuarios/post.php?id=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Arquitectura",
+						"crud_usuarios",
+						"post.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
